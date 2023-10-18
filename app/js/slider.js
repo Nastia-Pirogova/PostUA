@@ -1,13 +1,11 @@
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
 
-
-const swiper = new Swiper('.collection-points-swiper', {
+const swiper = new Swiper('.collection-points-slider', {
     slidesPerView: 'auto',
     spaceBetween: 30,
-    freeMode: true,
+    // freeMode: true,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.custom-button-next',
+        prevEl: '.custom-button-prev',
     },
 
 
@@ -19,6 +17,11 @@ const swiper = new Swiper('.collection-points-swiper', {
             spaceBetween: 30,
 
         },
-
+        768: {
+            slidesPerView: 2.3,
+        },
+       1240: {
+            slidesPerView: 3.5,
+        },
     }
 });
