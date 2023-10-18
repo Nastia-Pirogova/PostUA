@@ -227,7 +227,9 @@
                 </form>
             </div>
             </div>
-            <iframe class="calculator__inner-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9517.096740086872!2d-6.3981142816354035!3d53.392035019084695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670d50e9317be7%3A0x1ef966973dd6d646!2z0JHQu9Cw0L3Rh9Cw0YDQtNGB0YLQsNGD0L0g0KHQtdC90YLRgA!5e0!3m2!1sru!2sua!4v1697545423019!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="calculator__inner-maps" id="map"></div>
+
+
         </div>
 
     </section>
@@ -315,7 +317,6 @@
         </div>
     </section>
 
-    <div id="map"></div>
 </main>
 <footer class="footer">
     <div class="container">
@@ -359,7 +360,7 @@
     </div>
 </footer>
 <script src="js/map.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ5ewdsCKSkgkJ1fb0rgPbtsnVTMlFD40&callback=initMap" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ5ewdsCKSkgkJ1fb0rgPbtsnVTMlFD40&callback=initMap&language=uk" async defer></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script type="module" src="js/slider.js" ></script>
 <script src="js/main.js"></script>
