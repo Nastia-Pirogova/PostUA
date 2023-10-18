@@ -25,10 +25,10 @@ function initMap() {
             position: place.position,
             map: mapA,
             title: place.name,
-                    icon: {
-                        url: './images/marker.png', // Вставте URL вашого зображення
-                        scaledSize: new google.maps.Size(30, 45) // Розмір зображення
-                    }
+                icon: {
+                    url: './images/marker.png', // Вставте URL вашого зображення
+                    scaledSize: new google.maps.Size(30, 45) // Розмір зображення
+                }
         });
     });
 }
