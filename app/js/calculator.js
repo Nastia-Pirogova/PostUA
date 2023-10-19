@@ -3,18 +3,18 @@ document.getElementById("addPlace").addEventListener("click", function() {
     const newPlace = document.createElement("div");
     newPlace.innerHTML = `
                 <label class="calculator__inner-form-label" for="additionalWeight">Вага, кг</label>
-                <input class="calculator__inner-form-input" type="number" name="additionalWeight" step="0.1" min="0.1">
-                  <br>
-                        <b>Розмір</b><br>
-                    <br>
+                <input class="calculator__inner-form-input" type="number" name="additionalWeight" step="0.1" min="0.1" required>
+<!--                  <br>-->
+<!--                        <b>Розмір</b><br>-->
+<!--                    <br>-->
                 <label class="calculator__inner-form-label" for="additionalLength">Довжина, см</label>
-                <input class="calculator__inner-form-input" type="number" name="additionalLength">
+                <input class="calculator__inner-form-input" type="number" name="additionalLength" required>
                 
                 <label class="calculator__inner-form-label" for="additionalWidth">Ширина, см</label>
-                <input class="calculator__inner-form-input"  type="number" name="additionalWidth">
+                <input class="calculator__inner-form-input"  type="number" name="additionalWidth" required>
                 
                 <label class="calculator__inner-form-label" for="additionalHeight">Висота, см</label>
-                <input class="calculator__inner-form-input"  type="number" name="additionalHeight">
+                <input class="calculator__inner-form-input"  type="number" name="additionalHeight" required>
             `;
     additionalItems.appendChild(newPlace);
 });
