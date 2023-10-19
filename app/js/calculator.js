@@ -11,13 +11,13 @@ document.getElementById("addPlace").addEventListener("click", function() {
                 <input class="calculator__inner-form-input" type="number" name="additionalWeight" step="1" min="1" required>
 
                 <label class="calculator__inner-form-label" for="additionalLength">Довжина, см</label>
-                <input class="calculator__inner-form-input" type="number" name="additionalLength" required>
+                <input class="calculator__inner-form-input" type="number" name="additionalLength" step="1" min="1" required>
                 
                 <label class="calculator__inner-form-label" for="additionalWidth">Ширина, см</label>
-                <input class="calculator__inner-form-input"  type="number" name="additionalWidth" required>
+                <input class="calculator__inner-form-input"  type="number" name="additionalWidth" step="1" min="1" required>
                 
                 <label class="calculator__inner-form-label" for="additionalHeight">Висота, см</label>
-                <input class="calculator__inner-form-input"  type="number" name="additionalHeight" required>
+                <input class="calculator__inner-form-input"  type="number" name="additionalHeight" step="1" min="1" required>
             `;
     additionalItems.appendChild(newPlace);
 });
@@ -69,14 +69,17 @@ document.getElementById("deliveryForm").addEventListener("submit", function(even
     document.getElementById("result").innerHTML = `Вартість доставки: ${cost}євро <br><br>
     <div>* Ця сума є приблизною, остаточна вартість визначається при передачі посилки</div>
     `;
+
+
 });
 
 
+
 document.getElementById("addPlace").addEventListener("click", function() {
-    const numberOfItemsInput = document.getElementById("numberOfItems");
-    const currentValue = parseInt(numberOfItemsInput.value);
+    const numberOfItemsDiv = document.getElementById("numberOfItems");
 
-    const newValue = currentValue + 1;
+    const currentValue = parseInt(numberOfItemsDiv.textContent);
+    let value = currentValue + 1;
 
-    numberOfItemsInput.value = newValue;
+    numberOfItemsDiv.innerHTML= `${value}`
 });
