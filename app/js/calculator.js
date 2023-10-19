@@ -70,9 +70,7 @@ document.getElementById("deliveryForm").addEventListener("submit", function(even
     <div>* Ця сума є приблизною, остаточна вартість визначається при передачі посилки</div>
     `;
 
-
 });
-
 
 
 document.getElementById("addPlace").addEventListener("click", function() {
