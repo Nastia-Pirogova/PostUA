@@ -210,19 +210,45 @@
                 <p>Приблизна вартість</p>
             </div>
                   <div class="calculator-inner">
-                <form class="calculator__inner-form" action="" method="post">
+                <form class="calculator__inner-form" action="" method="post" id="deliveryForm">
                     <label class="calculator__inner-form-label" for="#">Звідки</label><br>
-                    <input class="calculator__inner-form-input" type="text" id="#" name="звідки" required>
+
+                    <select class="calculator__inner-form-input" id="departureCountry" name="departureCountry">
+                        <option value="Ірландія">Ірландія</option>
+                        <option value="Україна">Україна</option>
+                    </select>
 
                     <label class="calculator__inner-form-label" for="#">Куди</label><br>
-                    <input class="calculator__inner-form-input" type="text" id="#" name="куди" required>
+                    <select class="calculator__inner-form-input" id="destinationCountry" name="destinationCountry">
+                        <option value="Україна">Україна</option>
+                        <option value="Ірландія">Ірландія</option>
 
-                    <label class="calculator__inner-form-label" for="#">Вага</label><br>
-                    <input class="calculator__inner-form-input" type="number" id="#" name="вага" required>
+                    </select>
 
-                    <label class="calculator__inner-form-label"  for="#">Розмір</label><br>
-                    <input class="calculator__inner-form-input" type="text" id="#" name="розмір" required>
-                        <div>Результат: <span> 150 Євро</span></div>
+                    <label class="calculator__inner-form-label" for="#">Кількість місць</label><br>
+                    <input class="calculator__inner-form-input" type="number" id="numberOfItems" name="Кількість місць" min="1" value="1"  max="1" required>
+
+                    <div id="additionalItems">
+                        <!-- Дополнительные места будут добавлены здесь -->
+                    </div>
+                    <button class="button" id="addPlace">Додати місце +</button><br>
+                    <label class="calculator__inner-form-label" for="#">Вага, кг</label><br>
+                    <input class="calculator__inner-form-input" type="number" id="weight" name="вага" required>
+
+                    <br>
+                        <b>Розмір</b><br>
+                    <br>
+                    <label for="length">Довжина, см</label>
+                    <input class="calculator__inner-form-input" type="number" id="length" name="length">
+
+                    <label for="width">Ширина, см</label>
+                    <input class="calculator__inner-form-input" type="number" id="width" name="width">
+
+                    <label for="height">Висота, см</label>
+                    <input class="calculator__inner-form-input" type="number" id="height" name="height">
+
+                    <div id="result"></div>
+
                     <button class="calculator__inner-form-btn button" type="submit" value="Розрахувати">Розрахувати </button>
                 </form>
             </div>
@@ -316,7 +342,6 @@
             </div>
         </div>
     </section>
-
 </main>
 <footer class="footer">
     <div class="container">
@@ -365,6 +390,6 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script type="module" src="js/slider.js" ></script>
 <script src="js/main.js"></script>
-
+<script src="js/calculator.js"></script>
 </body>
 </html>
