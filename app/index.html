@@ -226,7 +226,7 @@
                     </select>
 
                     <label class="calculator__inner-form-label" for="#">Кількість місць</label><br>
-                    <input class="calculator__inner-form-input" type="number" id="numberOfItems" name="Кількість місць" min="1" value="1"  max="1" required>
+                    <input class="calculator__inner-form-input" type="number" id="numberOfItems" name="Кількість місць" min="1" value="1"  max="1">
 
 
 
@@ -234,20 +234,18 @@
 <!--                        <b>Розмір</b><br>-->
 <!--                    <br>-->
                     <label for="length">Довжина, см</label>
-                    <input class="calculator__inner-form-input" type="number" id="length" name="length" required>
+                    <input class="calculator__inner-form-input" type="number" id="length" name="length" min="1" value=""  required>
 
                     <label for="width">Ширина, см</label>
-                    <input class="calculator__inner-form-input" type="number" id="width" name="width" required>
+                    <input class="calculator__inner-form-input" type="number" id="width" name="width" min="1" value=""    required>
 
                     <label for="height">Висота, см</label>
-                    <input class="calculator__inner-form-input" type="number" id="height" name="height" required>
+                    <input class="calculator__inner-form-input" type="number" id="height" name="height"  min="1" value=""   required>
 
                     <label class="calculator__inner-form-label" for="#">Вага, кг</label><br>
-                    <input class="calculator__inner-form-input" type="number" id="weight" name="вага" required>
+                    <input class="calculator__inner-form-input" type="number" id="weight" name="вага" min="1" value=""    required>
 
-                    <div id="additionalItems">
-                        <!-- Дополнительные места будут добавлены здесь -->
-                    </div>
+                    <div id="additionalItems"></div>
                     <button class="button" id="addPlace">Додати місце +</button><br>
 
                     <div id="result"></div>

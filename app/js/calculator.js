@@ -5,14 +5,11 @@ document.getElementById("addPlace").addEventListener("click", function() {
               <svg width="100%" height="3" viewBox="0 0 650 3" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="650" height="3" fill="#575757"/>
               </svg>
-
                 <br>
                 <br>
                 <label class="calculator__inner-form-label" for="additionalWeight">Вага, кг</label>
-                <input class="calculator__inner-form-input" type="number" name="additionalWeight" step="0.1" min="0.1" required>
-<!--                  <br>-->
-<!--                        <b>Розмір</b><br>-->
-<!--                    <br>-->
+                <input class="calculator__inner-form-input" type="number" name="additionalWeight" step="1" min="1" required>
+
                 <label class="calculator__inner-form-label" for="additionalLength">Довжина, см</label>
                 <input class="calculator__inner-form-input" type="number" name="additionalLength" required>
                 
