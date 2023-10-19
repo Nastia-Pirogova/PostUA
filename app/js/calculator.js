@@ -66,7 +66,6 @@ document.getElementById("deliveryForm").addEventListener("submit", function(even
     });
 
 
-
     document.getElementById("result").innerHTML = `Вартість доставки: ${cost}євро <br><br>
     <div>* Ця сума є приблизною, остаточна вартість визначається при передачі посилки</div>
     `;
