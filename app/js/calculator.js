@@ -32,7 +32,6 @@ document.getElementById("deliveryForm").addEventListener("submit", function(even
     const width = parseFloat(document.getElementById("width").value);
     const height = parseFloat(document.getElementById("height").value);
 
-
     let cost = 0;
 
     const volumetricWeight = (length * width * height) / 4000;
