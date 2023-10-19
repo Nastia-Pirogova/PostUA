@@ -2,6 +2,12 @@ document.getElementById("addPlace").addEventListener("click", function() {
     const additionalItems = document.getElementById("additionalItems");
     const newPlace = document.createElement("div");
     newPlace.innerHTML = `
+              <svg width="100%" height="3" viewBox="0 0 650 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="650" height="3" fill="#575757"/>
+              </svg>
+
+                <br>
+                <br>
                 <label class="calculator__inner-form-label" for="additionalWeight">Вага, кг</label>
                 <input class="calculator__inner-form-input" type="number" name="additionalWeight" step="0.1" min="0.1" required>
 <!--                  <br>-->
@@ -62,7 +68,19 @@ document.getElementById("deliveryForm").addEventListener("submit", function(even
         }
     });
 
+
+
     document.getElementById("result").innerHTML = `Вартість доставки: ${cost}євро <br><br>
     <div>* Ця сума є приблизною, остаточна вартість визначається при передачі посилки</div>
     `;
+});
+
+
+document.getElementById("addPlace").addEventListener("click", function() {
+    const numberOfItemsInput = document.getElementById("numberOfItems");
+    const currentValue = parseInt(numberOfItemsInput.value);
+
+    const newValue = currentValue + 1;
+
+    numberOfItemsInput.value = newValue;
 });
