@@ -79,3 +79,8 @@ document.getElementById("addPlace").addEventListener("click", function() {
 
     numberOfItemsDiv.innerHTML= `${value}`
 });
+
+document.getElementById("calculateButton").addEventListener("click", function(event) {
+    event.preventDefault();
+    calculateCost();
+});
