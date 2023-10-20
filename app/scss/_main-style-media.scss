@@ -114,6 +114,10 @@
     padding: 0;
     display: flex;
     gap: 35px;
+    flex-direction: row;
+  }
+  div#map {
+    height: auto;
   }
   .container-calc-title {
     margin: 0 0 0 45px;
@@ -344,6 +348,7 @@
     display: flex;
     gap: 160px;
     margin: 50px 0 0 190px;
+
   }
   .container-calc-title {
     margin: 0 0 0 190px;
